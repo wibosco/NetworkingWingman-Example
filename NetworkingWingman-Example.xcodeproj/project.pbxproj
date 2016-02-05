@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43DE180D1C64F4BB00F6A320 /* NWMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE17EB1C64F4BB00F6A320 /* NWMAppDelegate.m */; };
+		43DE180E1C64F4BB00F6A320 /* NWMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE17EF1C64F4BB00F6A320 /* NWMOperationQueueManager.m */; };
+		43DE180F1C64F4BB00F6A320 /* NWMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE17F41C64F4BB00F6A320 /* NWMOperation.m */; };
+		43DE18101C64F4BB00F6A320 /* NWMAnswersAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE17F71C64F4BB00F6A320 /* NWMAnswersAPIManager.m */; };
+		43DE18111C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE17FB1C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.m */; };
+		43DE18121C64F4BB00F6A320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DE18001C64F4BB00F6A320 /* Assets.xcassets */; };
+		43DE18131C64F4BB00F6A320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DE18021C64F4BB00F6A320 /* LaunchScreen.storyboard */; };
+		43DE18141C64F4BB00F6A320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DE18041C64F4BB00F6A320 /* Main.storyboard */; };
+		43DE18161C64F4BB00F6A320 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE18081C64F4BB00F6A320 /* main.m */; };
+		43DE18171C64F4BB00F6A320 /* NWMAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE180C1C64F4BB00F6A320 /* NWMAnswersViewController.m */; };
+		43DE181B1C64F4C200F6A320 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43DE18191C64F4C200F6A320 /* Info.plist */; };
+		43DE181C1C64F4C200F6A320 /* NetworkingWingmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE181A1C64F4C200F6A320 /* NetworkingWingmanTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43DE17AB1C64EB2900F6A320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43DE17891C64EB2900F6A320 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43DE17901C64EB2900F6A320;
+			remoteInfo = NetworkingWingman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43DE17911C64EB2900F6A320 /* NetworkingWingman-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NetworkingWingman-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DE17AA1C64EB2900F6A320 /* NetworkingWingman-Example.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NetworkingWingman-Example.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DE17EA1C64F4BB00F6A320 /* NWMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMAppDelegate.h; sourceTree = "<group>"; };
+		43DE17EB1C64F4BB00F6A320 /* NWMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMAppDelegate.m; sourceTree = "<group>"; };
+		43DE17EE1C64F4BB00F6A320 /* NWMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMOperationQueueManager.h; sourceTree = "<group>"; };
+		43DE17EF1C64F4BB00F6A320 /* NWMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMOperationQueueManager.m; sourceTree = "<group>"; };
+		43DE17F31C64F4BB00F6A320 /* NWMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMOperation.h; sourceTree = "<group>"; };
+		43DE17F41C64F4BB00F6A320 /* NWMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMOperation.m; sourceTree = "<group>"; };
+		43DE17F61C64F4BB00F6A320 /* NWMAnswersAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMAnswersAPIManager.h; sourceTree = "<group>"; };
+		43DE17F71C64F4BB00F6A320 /* NWMAnswersAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMAnswersAPIManager.m; sourceTree = "<group>"; };
+		43DE17FA1C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMAnswersRetrievalOperation.h; sourceTree = "<group>"; };
+		43DE17FB1C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMAnswersRetrievalOperation.m; sourceTree = "<group>"; };
+		43DE18001C64F4BB00F6A320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43DE18031C64F4BB00F6A320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43DE18051C64F4BB00F6A320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43DE18071C64F4BB00F6A320 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43DE18081C64F4BB00F6A320 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43DE180B1C64F4BB00F6A320 /* NWMAnswersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMAnswersViewController.h; sourceTree = "<group>"; };
+		43DE180C1C64F4BB00F6A320 /* NWMAnswersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMAnswersViewController.m; sourceTree = "<group>"; };
+		43DE18191C64F4C200F6A320 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43DE181A1C64F4C200F6A320 /* NetworkingWingmanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingWingmanTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43DE178E1C64EB2900F6A320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DE17A71C64EB2900F6A320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43DE17881C64EB2900F6A320 = {
+			isa = PBXGroup;
+			children = (
+				43DE17E81C64F4BB00F6A320 /* NetworkingWingman-Example */,
+				43DE18181C64F4C200F6A320 /* NetworkingWingman-ExampleTests */,
+				43DE17921C64EB2900F6A320 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43DE17921C64EB2900F6A320 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17911C64EB2900F6A320 /* NetworkingWingman-Example.app */,
+				43DE17AA1C64EB2900F6A320 /* NetworkingWingman-Example.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43DE17E81C64F4BB00F6A320 /* NetworkingWingman-Example */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17E91C64F4BB00F6A320 /* AppDelegate */,
+				43DE17EC1C64F4BB00F6A320 /* Managers */,
+				43DE17F01C64F4BB00F6A320 /* Networking */,
+				43DE17FE1C64F4BB00F6A320 /* Resources */,
+				43DE18061C64F4BB00F6A320 /* SupportingFiles */,
+				43DE18091C64F4BB00F6A320 /* ViewControllers */,
+			);
+			path = "NetworkingWingman-Example";
+			sourceTree = "<group>";
+		};
+		43DE17E91C64F4BB00F6A320 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17EA1C64F4BB00F6A320 /* NWMAppDelegate.h */,
+				43DE17EB1C64F4BB00F6A320 /* NWMAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		43DE17EC1C64F4BB00F6A320 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17ED1C64F4BB00F6A320 /* Queue */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		43DE17ED1C64F4BB00F6A320 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17EE1C64F4BB00F6A320 /* NWMOperationQueueManager.h */,
+				43DE17EF1C64F4BB00F6A320 /* NWMOperationQueueManager.m */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		43DE17F01C64F4BB00F6A320 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17F11C64F4BB00F6A320 /* Abstract */,
+				43DE17F51C64F4BB00F6A320 /* Answers */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		43DE17F11C64F4BB00F6A320 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17F21C64F4BB00F6A320 /* Operation */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		43DE17F21C64F4BB00F6A320 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17F31C64F4BB00F6A320 /* NWMOperation.h */,
+				43DE17F41C64F4BB00F6A320 /* NWMOperation.m */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		43DE17F51C64F4BB00F6A320 /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17F61C64F4BB00F6A320 /* NWMAnswersAPIManager.h */,
+				43DE17F71C64F4BB00F6A320 /* NWMAnswersAPIManager.m */,
+				43DE17F81C64F4BB00F6A320 /* Operations */,
+				43DE17FC1C64F4BB00F6A320 /* Parsers */,
+			);
+			path = Answers;
+			sourceTree = "<group>";
+		};
+		43DE17F81C64F4BB00F6A320 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17F91C64F4BB00F6A320 /* Retrieval */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		43DE17F91C64F4BB00F6A320 /* Retrieval */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17FA1C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.h */,
+				43DE17FB1C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.m */,
+			);
+			path = Retrieval;
+			sourceTree = "<group>";
+		};
+		43DE17FC1C64F4BB00F6A320 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17FD1C64F4BB00F6A320 /* Answer */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		43DE17FD1C64F4BB00F6A320 /* Answer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Answer;
+			sourceTree = "<group>";
+		};
+		43DE17FE1C64F4BB00F6A320 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43DE17FF1C64F4BB00F6A320 /* Images */,
+				43DE18011C64F4BB00F6A320 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43DE17FF1C64F4BB00F6A320 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				43DE18001C64F4BB00F6A320 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		43DE18011C64F4BB00F6A320 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				43DE18021C64F4BB00F6A320 /* LaunchScreen.storyboard */,
+				43DE18041C64F4BB00F6A320 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		43DE18061C64F4BB00F6A320 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				43DE18071C64F4BB00F6A320 /* Info.plist */,
+				43DE18081C64F4BB00F6A320 /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		43DE18091C64F4BB00F6A320 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43DE180A1C64F4BB00F6A320 /* Answers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43DE180A1C64F4BB00F6A320 /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				43DE180B1C64F4BB00F6A320 /* NWMAnswersViewController.h */,
+				43DE180C1C64F4BB00F6A320 /* NWMAnswersViewController.m */,
+			);
+			path = Answers;
+			sourceTree = "<group>";
+		};
+		43DE18181C64F4C200F6A320 /* NetworkingWingman-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				43DE18191C64F4C200F6A320 /* Info.plist */,
+				43DE181A1C64F4C200F6A320 /* NetworkingWingmanTests.m */,
+			);
+			path = "NetworkingWingman-ExampleTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43DE17901C64EB2900F6A320 /* NetworkingWingman-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43DE17B31C64EB2900F6A320 /* Build configuration list for PBXNativeTarget "NetworkingWingman-Example" */;
+			buildPhases = (
+				43DE178D1C64EB2900F6A320 /* Sources */,
+				43DE178E1C64EB2900F6A320 /* Frameworks */,
+				43DE178F1C64EB2900F6A320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NetworkingWingman-Example";
+			productName = NetworkingWingman;
+			productReference = 43DE17911C64EB2900F6A320 /* NetworkingWingman-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43DE17A91C64EB2900F6A320 /* NetworkingWingman-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43DE17B61C64EB2900F6A320 /* Build configuration list for PBXNativeTarget "NetworkingWingman-ExampleTests" */;
+			buildPhases = (
+				43DE17A61C64EB2900F6A320 /* Sources */,
+				43DE17A71C64EB2900F6A320 /* Frameworks */,
+				43DE17A81C64EB2900F6A320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43DE17AC1C64EB2900F6A320 /* PBXTargetDependency */,
+			);
+			name = "NetworkingWingman-ExampleTests";
+			productName = NetworkingWingmanTests;
+			productReference = 43DE17AA1C64EB2900F6A320 /* NetworkingWingman-Example.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43DE17891C64EB2900F6A320 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NWM;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Boles;
+				TargetAttributes = {
+					43DE17901C64EB2900F6A320 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					43DE17A91C64EB2900F6A320 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 43DE17901C64EB2900F6A320;
+					};
+				};
+			};
+			buildConfigurationList = 43DE178C1C64EB2900F6A320 /* Build configuration list for PBXProject "NetworkingWingman-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43DE17881C64EB2900F6A320;
+			productRefGroup = 43DE17921C64EB2900F6A320 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43DE17901C64EB2900F6A320 /* NetworkingWingman-Example */,
+				43DE17A91C64EB2900F6A320 /* NetworkingWingman-ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43DE178F1C64EB2900F6A320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DE18141C64F4BB00F6A320 /* Main.storyboard in Resources */,
+				43DE18121C64F4BB00F6A320 /* Assets.xcassets in Resources */,
+				43DE18131C64F4BB00F6A320 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DE17A81C64EB2900F6A320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DE181B1C64F4C200F6A320 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43DE178D1C64EB2900F6A320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DE18171C64F4BB00F6A320 /* NWMAnswersViewController.m in Sources */,
+				43DE180E1C64F4BB00F6A320 /* NWMOperationQueueManager.m in Sources */,
+				43DE180D1C64F4BB00F6A320 /* NWMAppDelegate.m in Sources */,
+				43DE180F1C64F4BB00F6A320 /* NWMOperation.m in Sources */,
+				43DE18111C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.m in Sources */,
+				43DE18161C64F4BB00F6A320 /* main.m in Sources */,
+				43DE18101C64F4BB00F6A320 /* NWMAnswersAPIManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DE17A61C64EB2900F6A320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DE181C1C64F4C200F6A320 /* NetworkingWingmanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43DE17AC1C64EB2900F6A320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43DE17901C64EB2900F6A320 /* NetworkingWingman-Example */;
+			targetProxy = 43DE17AB1C64EB2900F6A320 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43DE18021C64F4BB00F6A320 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43DE18031C64F4BB00F6A320 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		43DE18041C64F4BB00F6A320 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43DE18051C64F4BB00F6A320 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43DE17B11C64EB2900F6A320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43DE17B21C64EB2900F6A320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43DE17B41C64EB2900F6A320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NetworkingWingman-Example/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.NetworkingWingman-Example";
+				PRODUCT_NAME = "NetworkingWingman-Example";
+			};
+			name = Debug;
+		};
+		43DE17B51C64EB2900F6A320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NetworkingWingman-Example/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.NetworkingWingman-Example";
+				PRODUCT_NAME = "NetworkingWingman-Example";
+			};
+			name = Release;
+		};
+		43DE17B71C64EB2900F6A320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NetworkingWingmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.NetworkingWingmanTests;
+				PRODUCT_NAME = "NetworkingWingman-Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkingWingman-Example.app/NetworkingWingman-Example";
+			};
+			name = Debug;
+		};
+		43DE17B81C64EB2900F6A320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NetworkingWingmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.NetworkingWingmanTests;
+				PRODUCT_NAME = "NetworkingWingman-Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkingWingman-Example.app/NetworkingWingman-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43DE178C1C64EB2900F6A320 /* Build configuration list for PBXProject "NetworkingWingman-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DE17B11C64EB2900F6A320 /* Debug */,
+				43DE17B21C64EB2900F6A320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43DE17B31C64EB2900F6A320 /* Build configuration list for PBXNativeTarget "NetworkingWingman-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DE17B41C64EB2900F6A320 /* Debug */,
+				43DE17B51C64EB2900F6A320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43DE17B61C64EB2900F6A320 /* Build configuration list for PBXNativeTarget "NetworkingWingman-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DE17B71C64EB2900F6A320 /* Debug */,
+				43DE17B81C64EB2900F6A320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43DE17891C64EB2900F6A320 /* Project object */;
+}
