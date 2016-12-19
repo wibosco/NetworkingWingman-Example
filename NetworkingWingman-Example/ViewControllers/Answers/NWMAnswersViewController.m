@@ -9,8 +9,14 @@
 #import "NWMAnswersViewController.h"
 
 #import "NWMAnswersAPIManager.h"
+#import "NWMAnswer.h"
+#import "NWMAnswerTableViewCell.h"
 
-@interface NWMAnswersViewController ()
+@interface NWMAnswersViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) NSArray<NWMAnswer *> *answers;
 
 @end
 
@@ -18,20 +24,42 @@
 
 #pragma mark - Viewlifecycle
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
     [NWMAnswersAPIManager retrieveAnswersWithCompletion:^(NSArray *answers)
     {
-        //nil
+        self.answers = answers;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
     }];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.answers.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NWMAnswerTableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier: NSStringFromClass([NWMAnswerTableViewCell class]) forIndexPath:indexPath];
+    
+    NWMAnswer *answer = self.answers[indexPath.row];
+    tableViewCell.answerIDLabel.text = [NSString stringWithFormat:@"%@", answer.answerID];
+    
+    return tableViewCell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath
+                             animated:YES];
 }
 
 @end

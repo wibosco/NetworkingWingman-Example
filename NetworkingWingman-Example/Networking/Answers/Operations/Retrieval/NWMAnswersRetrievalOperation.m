@@ -7,6 +7,7 @@
 //
 
 #import "NWMAnswersRetrievalOperation.h"
+#import "NWMAnswerParser.h"
 
 @interface NWMAnswersRetrievalOperation ()
 
@@ -28,6 +29,7 @@
     if (self)
     {
         self.completion = completion;
+        self.name = @"Answers-Retrieval";
     }
     
     return self;
@@ -46,14 +48,12 @@
     NSURLSessionDataTask *task = [session dataTaskWithURL:url
                                         completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)
                                   {
-//                                      NSDictionary *answersJSON = [NSJSONSerialization JSONObjectWithData:data
-//                                                                                                  options: NSJSONReadingMutableContainers
-//                                                                                                    error: nil];
-//                                      
-//                                      NWMAnswerParser *parser = [[NWMAnswerParser alloc] init];
-//                                      NSArray *answers = [parser parseAnswers:answersJSON];
+                                      NSDictionary *answersJSON = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                  options:NSJSONReadingMutableContainers
+                                                                                                    error:nil];
                                       
-                                      NSArray *answers = nil;
+                                      NWMAnswerParser *parser = [[NWMAnswerParser alloc] init];
+                                      NSArray *answers = [parser parseAnswers:answersJSON[@"items"]];
                                       
                                       if (self.completion)
                                       {

@@ -19,6 +19,9 @@
 		43DE18171C64F4BB00F6A320 /* NWMAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE180C1C64F4BB00F6A320 /* NWMAnswersViewController.m */; };
 		43DE181B1C64F4C200F6A320 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43DE18191C64F4C200F6A320 /* Info.plist */; };
 		43DE181C1C64F4C200F6A320 /* NetworkingWingmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE181A1C64F4C200F6A320 /* NetworkingWingmanTests.m */; };
+		914248781E0894B6008729C9 /* NWMAnswerParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 914248771E0894B6008729C9 /* NWMAnswerParser.m */; };
+		9142487C1E0895A6008729C9 /* NWMAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9142487B1E0895A6008729C9 /* NWMAnswer.m */; };
+		914248801E089A29008729C9 /* NWMAnswerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9142487F1E089A29008729C9 /* NWMAnswerTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		43DE180C1C64F4BB00F6A320 /* NWMAnswersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMAnswersViewController.m; sourceTree = "<group>"; };
 		43DE18191C64F4C200F6A320 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43DE181A1C64F4C200F6A320 /* NetworkingWingmanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingWingmanTests.m; sourceTree = "<group>"; };
+		914248761E0894B6008729C9 /* NWMAnswerParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMAnswerParser.h; sourceTree = "<group>"; };
+		914248771E0894B6008729C9 /* NWMAnswerParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMAnswerParser.m; sourceTree = "<group>"; };
+		9142487A1E0895A6008729C9 /* NWMAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMAnswer.h; sourceTree = "<group>"; };
+		9142487B1E0895A6008729C9 /* NWMAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMAnswer.m; sourceTree = "<group>"; };
+		9142487E1E089A29008729C9 /* NWMAnswerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMAnswerTableViewCell.h; sourceTree = "<group>"; };
+		9142487F1E089A29008729C9 /* NWMAnswerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMAnswerTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +105,7 @@
 			children = (
 				43DE17E91C64F4BB00F6A320 /* AppDelegate */,
 				43DE17EC1C64F4BB00F6A320 /* Managers */,
+				914248791E089595008729C9 /* Model */,
 				43DE17F01C64F4BB00F6A320 /* Networking */,
 				43DE17FE1C64F4BB00F6A320 /* Resources */,
 				43DE18061C64F4BB00F6A320 /* SupportingFiles */,
@@ -162,7 +172,7 @@
 				43DE17F61C64F4BB00F6A320 /* NWMAnswersAPIManager.h */,
 				43DE17F71C64F4BB00F6A320 /* NWMAnswersAPIManager.m */,
 				43DE17F81C64F4BB00F6A320 /* Operations */,
-				43DE17FC1C64F4BB00F6A320 /* Parsers */,
+				914248741E08948A008729C9 /* Parsers */,
 			);
 			path = Answers;
 			sourceTree = "<group>";
@@ -182,21 +192,6 @@
 				43DE17FB1C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.m */,
 			);
 			path = Retrieval;
-			sourceTree = "<group>";
-		};
-		43DE17FC1C64F4BB00F6A320 /* Parsers */ = {
-			isa = PBXGroup;
-			children = (
-				43DE17FD1C64F4BB00F6A320 /* Answer */,
-			);
-			path = Parsers;
-			sourceTree = "<group>";
-		};
-		43DE17FD1C64F4BB00F6A320 /* Answer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Answer;
 			sourceTree = "<group>";
 		};
 		43DE17FE1C64F4BB00F6A320 /* Resources */ = {
@@ -245,6 +240,7 @@
 		43DE180A1C64F4BB00F6A320 /* Answers */ = {
 			isa = PBXGroup;
 			children = (
+				9142487D1E0899CF008729C9 /* Cells */,
 				43DE180B1C64F4BB00F6A320 /* NWMAnswersViewController.h */,
 				43DE180C1C64F4BB00F6A320 /* NWMAnswersViewController.m */,
 			);
@@ -258,6 +254,41 @@
 				43DE181A1C64F4C200F6A320 /* NetworkingWingmanTests.m */,
 			);
 			path = "NetworkingWingman-ExampleTests";
+			sourceTree = "<group>";
+		};
+		914248741E08948A008729C9 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				914248751E08948A008729C9 /* Answer */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		914248751E08948A008729C9 /* Answer */ = {
+			isa = PBXGroup;
+			children = (
+				914248761E0894B6008729C9 /* NWMAnswerParser.h */,
+				914248771E0894B6008729C9 /* NWMAnswerParser.m */,
+			);
+			path = Answer;
+			sourceTree = "<group>";
+		};
+		914248791E089595008729C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9142487A1E0895A6008729C9 /* NWMAnswer.h */,
+				9142487B1E0895A6008729C9 /* NWMAnswer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9142487D1E0899CF008729C9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9142487E1E089A29008729C9 /* NWMAnswerTableViewCell.h */,
+				9142487F1E089A29008729C9 /* NWMAnswerTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +336,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = NWM;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Boles;
 				TargetAttributes = {
 					43DE17901C64EB2900F6A320 = {
@@ -365,8 +396,11 @@
 				43DE18171C64F4BB00F6A320 /* NWMAnswersViewController.m in Sources */,
 				43DE180E1C64F4BB00F6A320 /* NWMOperationQueueManager.m in Sources */,
 				43DE180D1C64F4BB00F6A320 /* NWMAppDelegate.m in Sources */,
+				914248781E0894B6008729C9 /* NWMAnswerParser.m in Sources */,
+				914248801E089A29008729C9 /* NWMAnswerTableViewCell.m in Sources */,
 				43DE180F1C64F4BB00F6A320 /* NWMOperation.m in Sources */,
 				43DE18111C64F4BB00F6A320 /* NWMAnswersRetrievalOperation.m in Sources */,
+				9142487C1E0895A6008729C9 /* NWMAnswer.m in Sources */,
 				43DE18161C64F4BB00F6A320 /* main.m in Sources */,
 				43DE18101C64F4BB00F6A320 /* NWMAnswersAPIManager.m in Sources */,
 			);
@@ -423,8 +457,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -466,8 +502,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
