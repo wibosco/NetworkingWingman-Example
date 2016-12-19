@@ -554,7 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = NetworkingWingmanTests/Info.plist;
+				INFOPLIST_FILE = "NetworkingWingman-ExampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.NetworkingWingmanTests;
 				PRODUCT_NAME = "NetworkingWingman-Example";
@@ -566,7 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = NetworkingWingmanTests/Info.plist;
+				INFOPLIST_FILE = "NetworkingWingman-ExampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.NetworkingWingmanTests;
 				PRODUCT_NAME = "NetworkingWingman-Example";
