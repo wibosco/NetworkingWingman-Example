@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/wibosco/NetworkingWingman-Example.svg)](https://travis-ci.org/wibosco/NetworkingWingman-Example)
-<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat" alt="Swift" /></a>
 
 # NetworkingWingman-Example
 
