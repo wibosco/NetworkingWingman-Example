@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/wibosco/NetworkingWingman-Example.svg)](https://travis-ci.org/wibosco/NetworkingWingman-Example)
+<a href="https://twitter.com/wibosco"><img src="https://img.shields.io/badge/twitter-@wibosco-blue.svg?style=flat" alt="Twitter: @wibosco" /></a>
 
 # NetworkingWingman-Example
 
