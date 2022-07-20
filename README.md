@@ -3,6 +3,6 @@
 
 # NetworkingWingman-Example
 
-Example of combining NSURLSession with NSOperation to form one task as shown in this article - http://williamboles.me/networking-with-nsoperation-as-your-wingman/
+Example of combining NSURLSession with NSOperation to form one task as shown in this article - https://williamboles.com/networking-with-nsoperation-as-your-wingman/
 
 Special thanks to Gabi Massana for allowing me to base this example off of https://github.com/GabrielMassana/CoreDataFullStack-iOS
