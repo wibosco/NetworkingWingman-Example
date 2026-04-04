@@ -18,7 +18,7 @@
 + (void)retrieveAnswersWithCompletion:(void (^)(NSArray *answers))completion
 {
     NWMAnswersRetrievalOperation *operation = [[NWMAnswersRetrievalOperation alloc] initWithCompletion:completion];
-    
+
     [[NWMOperationQueueManager sharedInstance] addOperation:operation];
 }
 

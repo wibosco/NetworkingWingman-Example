@@ -24,13 +24,13 @@
 + (instancetype)sharedInstance
 {
     static NWMOperationQueueManager *sharedInstance = nil;
-    
+
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
                   {
                       sharedInstance = [[NWMOperationQueueManager alloc] init];
                   });
-    
+
     return sharedInstance;
 }
 
@@ -39,12 +39,12 @@
 - (instancetype)init
 {
     self = [super init];
-    
+
     if (self)
     {
         self.queue = [[NSOperationQueue alloc] init];
     }
-    
+
     return self;
 }
 

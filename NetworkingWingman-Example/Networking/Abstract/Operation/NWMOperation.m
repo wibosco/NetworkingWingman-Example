@@ -10,9 +10,6 @@
 
 @implementation NWMOperation
 
-/*
- We need to do old school synthesizing as the compiler has trouble creating the internal ivars.
- */
 @synthesize ready = _ready;
 @synthesize executing = _executing;
 @synthesize finished = _finished;
@@ -22,12 +19,12 @@
 - (instancetype)init
 {
     self = [super init];
-    
+
     if (self)
     {
         self.ready = YES;
     }
-    
+
     return self;
 }
 
@@ -45,7 +42,7 @@
 
 - (BOOL)isReady
 {
-    return _ready;
+    return [super isReady] && _ready;
 }
 
 - (void)setExecuting:(BOOL)executing
@@ -78,34 +75,49 @@
     return _finished;
 }
 
-- (BOOL)isAsynchronous
-{
-    return YES;
-}
-
-#pragma mark - Control
+#pragma mark - Start
 
 - (void)start
 {
+    if (self.isCancelled)
+    {
+        [self finish];
+        return;
+    }
+
     if (!self.isExecuting)
     {
         self.ready = NO;
         self.executing = YES;
         self.finished = NO;
-        
-        NSLog(@"\"%@\" Operation Started.", self.name);
     }
 }
+
+#pragma mark - Finish
 
 - (void)finish
 {
     if (self.executing)
     {
-        NSLog(@"\"%@\" Operation Finished.", self.name);
-        
         self.executing = NO;
         self.finished = YES;
     }
+}
+
+#pragma mark - Cancel
+
+- (void)cancel
+{
+    [super cancel];
+
+    [self finish];
+}
+
+#pragma mark - Asynchronous
+
+- (BOOL)isAsynchronous
+{
+    return YES;
 }
 
 @end
