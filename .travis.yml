@@ -1,6 +1,0 @@
-language: objective-c
-
-osx_image: xcode8.2
-
-script:
-   travis_retry xcodebuild -project NetworkingWingman-Example.xcodeproj -scheme NetworkingWingman-Example test -destination "platform=iOS Simulator,OS=10.1,name=iPhone SE"
